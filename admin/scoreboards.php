@@ -11,67 +11,10 @@ require '../api/api.php';
 <link href="../style.css" rel="stylesheet">
 <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/PlayerHead.js"></script>
+<script type="text/javascript" src="DropTextbox.js"></script>
+<script type="text/javascript" src="ang.scoreboard.js"></script>
 <script type="text/javascript">
-$(function(){
-  /*
-  * Fill all the auto-complete datalists
-  */
-  $("datalist").each(function(idx,ele){
-    id = $(ele).attr("id");
-    $.ajax({
-  dataType: "json",
-  url: "getData.php?id=" + id,
-  cache: false,
-  success: function(data){
-      for(x in data){
-        //console.log(id + " :: " + x);
-        $(ele).append('<option value="' + x + '">');
-      }
-    }
-  });
-});
-});
 
-
-function loadDataAjax(){
-  $.ajax({
-    dataType:"json",
-    url: '../config/scoreboards.json',
-    cache: false,
-    success: function(data){
-    loadData(data);
-  }});
-}
-
-$(function(){
-  console.log("Loading scoreboard data.");
-  loadDataAjax();
-  console.log("Done.");
-});
-
-function listCtrl($scope){
-  $scope.tmpl = {};
-  $scope.tmpl.scoreboard = {
-    id:"newId",
-    data: []
-  };
-  $scope.scoreboards = [];
-  $scope.addScoreboard = function(){
-    $scope.scoreboards.push(JSON.parse(JSON.stringify($scope.tmpl.scoreboard)));
-  }
-
-  $scope.addScoreboardField = function(idx){
-    $scope.scoreboards[idx].data.push({});
-  }
-}
-
-/*
-* Load scoreboard data manually
-*/
-function loadData(data){
-  angular.element("body").scope().scoreboards = data;
-  angular.element("body").scope().$apply();
-}
 
 function saveData(){
   console.log("our side");
@@ -89,7 +32,7 @@ function saveData(){
 </script>
 <title>Scoreboards</title>
 </head>
-<body ng-app ng-controller="listCtrl">
+<body ng-app="bsScoreboard" ng-controller="listCtrl">
 <datalist id="domain">
 </datalist>
 <datalist id="world">
@@ -100,10 +43,13 @@ function saveData(){
 </datalist>
 <div class="container">
 <div class="row">
-  <button ng-click="addScoreboard()">Add Item</button>
+  {{test}}
+  <span drop-textbox value="test" opt="ui.statistics"></span>
+  <button ng-click="addScoreboard()">Add Scoreboard</button>
   <div ng-repeat="scoreboard in scoreboards">
     <h3>{{scoreboard.title}}</h3>
-    id: <input type="text" ng-model="scoreboard.id"><br>
+    title: <input type="text" ng-model="scoreboard.title" placeholder="scoreboard title"><br>
+    id: <input type="text" ng-model="scoreboard.id" placeholder="scoreboard id"><br>
     <table class="table table-striped">
       <tr>
         <th>Label</th>
@@ -121,14 +67,20 @@ function saveData(){
         <td><input list="world" class="input-medium" type="text" ng-model="entry.world"></td>
         <td><input list="category" class="input-medium" type="text" ng-model="entry.cat"></td>
         <td><input list="statistic" class="input-medium" type="text" ng-model="entry.stat"></td>
-        <td><input class="input-small" type="text" ng-model="entry.order.idx"></td>
+        <td><input class="input-mini" type="number" min="1" ng-model="entry.order.idx"></td>
         <td><select class="input-small" ng-model="entry.order.type">
               <option value="NONE">None</option>
               <option value="ASC">Asc</option>
               <option value="DESC">Desc</option>
             </select>
         </td>
-        <td><button>Up</button><button>down</button><button>Remove</button></td>
+        <td>
+          <div class="btn-group">
+          <button class="btn btn-info"><i class="icon-arrow-up"></i></button>
+          <button class="btn btn-info"><i class="icon-arrow-down"></i></button>
+          <button class="btn btn-danger"><i class="icon-remove"></i></button>
+        </div>
+        </td>
       </tr>
     </table>
     <button ng-click="addScoreboardField($index)">Add Field</button>

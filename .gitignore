@@ -1,1 +1,2 @@
-api/config.php #Disable to prevent leaking test configuration values
+#DO NOT COPY CONFIG TO GIT
+api/config.php
