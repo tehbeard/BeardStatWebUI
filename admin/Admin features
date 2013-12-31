@@ -1,0 +1,16 @@
+Admin features
+--------------
+
+v1.0
+
++ Login
++ Modify scoreboards (basic, no auto comp.)
++ Reset player (whole)
+
+v1.1
++ Add auto comp. to scoreboard management 
++ Clear / modify specific stat for player
+
+v1.2 
++ modify player tabs view
++ Report? (Reuse scoreboard mechanics? Add conditions to scoreboard fields)

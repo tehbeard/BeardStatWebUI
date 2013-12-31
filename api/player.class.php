@@ -1,4 +1,5 @@
 <?php
+namespace BeardStat;
 /**
  * Represents a stat object
  * @author James

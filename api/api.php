@@ -1,4 +1,5 @@
 <?php
+namespace BeardStat;
 /**
 API file for beardstat web API.
 */
@@ -8,7 +9,6 @@ $bs_db = new mysqli(BS_DB_HOST,BS_DB_USER,BS_DB_PASS,BS_DB_DB,BS_DB_PORT);
 if($bs_db->connect_errno > 0){
     die('Unable to connect to database [' . $bs_db->connect_error . ']');
 }
-
 /**
  * grab all data from a table, used for local lookup
  * @param string $element

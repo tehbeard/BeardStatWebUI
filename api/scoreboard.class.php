@@ -1,5 +1,5 @@
 <?php
-
+namespace BeardStat;
 /**
  * Class for accessing and iterating scoreboard data
  * @author James

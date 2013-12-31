@@ -6,7 +6,6 @@ dropTextBox.controller('dropTextBoxCtrl', ['$scope', function($scope) {
 	};
 }]);
 dropTextBox.directive('dropTextbox', function () {
-    /*BORKED BY ng-repeat primitive issue, same as book pages, need to encapsulate colors*/
     return {
       restrict: 'A',
       scope: {'value':'=','opt':'='},

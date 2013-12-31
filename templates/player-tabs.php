@@ -1,6 +1,6 @@
 <?php 
-$p = new SPlayer($_GET['playerName']);
-$tabs = new StatTabs("tabs.json");
+$p = new BeardStat\SPlayer($_GET['playerName']);
+$tabs = new BeardStat\StatTabs(BEARDSTAT_API_DIR . "../config/tabs.json");
 ?>
 <div style="clear: both; margin-bottom: 8px" class="span7">
 <div style="float: left;">
