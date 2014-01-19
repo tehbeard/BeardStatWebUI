@@ -7,7 +7,7 @@ include 'templates/header.php';
 ?>
 <div class="span8 offset2" style="background-color: #FAFAFA">
 <?php
-if(!isset($_GET['search']) && isset($_GET['playerName'])){
+if(!isset($_GET['search']) && ( isset($_GET['playerName']) || isset($_GET['playerUuid']))){
 include 'templates/player-tabs.php';
 }
 else

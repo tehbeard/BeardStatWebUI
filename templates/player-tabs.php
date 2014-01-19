@@ -1,5 +1,12 @@
 <?php 
-$p = new BeardStat\SPlayer($_GET['playerName']);
+$p = null;
+if(isset($_GET['playerName'])){
+  $p = BeardStat\SPlayer::getFromNameType($_GET['playerName']);
+}
+if(isset($_GET['playerUuid'])){
+  $p = BeardStat\SPlayer::getFromUUID($_GET['playerUuid']);
+}
+
 $tabs = new BeardStat\StatTabs(BEARDSTAT_API_DIR . "../config/tabs.json");
 ?>
 <div style="clear: both; margin-bottom: 8px" class="span7">
