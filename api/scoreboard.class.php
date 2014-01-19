@@ -100,7 +100,7 @@ function loadFromData($selectedScoreboard,$limit=10){
 
   $type = "player";//TODO - Make selectable in future
 
-  $sqlSelect = "$[PREFIX]_entity.`name` as `player`";
+  $sqlSelect = "$[PREFIX]_entity.`name` as `player` , $[PREFIX]_entity.`uuid` as `uuid`";
   $sqlFrom   = " $[PREFIX]_entity";
 
   $sqlWhere  = "$[PREFIX]_entity.`type` = \"player\"";
@@ -196,6 +196,10 @@ SQL;
   */
  function the_player_name(){
   return $this->data[$this->dataIdx]["player"];
+ }
+
+ function the_player_uuid(){
+  return $this->data[$this->dataIdx]["uuid"];
  }
  /**
   * Resets field iterator

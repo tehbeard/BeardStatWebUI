@@ -13,13 +13,15 @@
 else {
  //Process form, find matching players;
  global $bs_db;
- $sql = "SELECT `name` FROM " . BS_DB_PREFIX . "_entity WHERE `name` LIKE '%" . $bs_db->real_escape_string($_GET['playerName']) . "%'";
+ $sql = "SELECT `name`,`uuid` FROM " . BS_DB_PREFIX . "_entity WHERE `name` LIKE '%" . $bs_db->real_escape_string($_GET['playerName']) . "%' and `type`='player'";
  $bs_db->real_query($sql);
  $res = $bs_db->store_result();
 
  $names = array();
  while($row = $res->fetch_object()){
-  $names[] = $row->name;
+  $names[] = array(
+  	"name" =>$row->name,
+  	"uuid" =>$row->uuid);
  }
  $res->free();
 
@@ -36,7 +38,7 @@ echo "<span class='label label-important'>No users found matching that name</spa
 if(sizeof($names) == 1){
 ?>
 <script>
-window.location="showplayer.php?playerName=<?php echo $names[0];?>";
+window.location="showplayer.php?playerUuid=<?php echo $names[0]["uuid"];?>";
 </script>
 <?php die();
 }
@@ -49,9 +51,9 @@ else{
 ?>
 	<tr>
 		
-		<td><canvas class="head head-small" data-name="<?php echo $name;?>"></canvas>
+		<td><canvas class="head head-small" data-name="<?php echo $name["name"];?>"></canvas>
 		</td>
-		<td><a href="showplayer.php?playerName=<?php echo $name;?>"><?php echo $name;?></a>
+		<td><a href="showplayer.php?playerUuid=<?php echo $name["uuid"];?>"><?php echo $name["name"];?></name>
 		</td>
 
 	</tr>
