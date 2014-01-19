@@ -31,19 +31,40 @@ Class SPlayerStat{
 
 Class SPlayer{
 
+  public static function getFromNameType($name,$type="player"){
+  global $bs_db;
+  $_name = $bs_db->real_escape_string($name);
+  $_type = $bs_db->real_escape_string($type);
+
+  $bs_db->real_query("SELECT `name`,`entityId` FROM `" . BS_DB_PREFIX . "_entity` WHERE `name`='$_name' AND `type`='$_type'"); 
+  $res = $bs_db->store_result();
+  $row = $res->fetch_assoc();
+  $_name = $row["name"];
+  $eid = $row["entityId"];
+  $res->free();
+  return new SPlayer($eid,$_name);
+  }
+
+  public static function getFromUUID($uuid){
+    global $bs_db;
+  $bs_db->real_query("SELECT `name`,`entityId` FROM `" . BS_DB_PREFIX . "_entity` WHERE `uuid`='$uuid'"); 
+  $res = $bs_db->store_result();
+  $row = $res->fetch_assoc();
+  $_name = $row["name"];
+  $eid = $row["entityId"];
+  $res->free();
+  return new SPlayer($eid,$_name);
+  }
+
  public $name = "";
+ public $type = "";
  public $data = array();
 
- function __construct($playerName) {
+ private function __construct($entityId,$name) {
 
   global $bs_db;
   
-  //FEEX player name to be case correct using db as authoritive source. because i'm awesome.
-  $this->name = $bs_db->real_escape_string($playerName);
-  $bs_db->real_query("SELECT `name` FROM `" . BS_DB_PREFIX . "_entity` WHERE `name`='$this->name'"); 
-  $res = $bs_db->store_result();
-  $this->name = array_value($res->fetch_assoc(), "name");
-  $res->free();
+  
   
   $sql = <<<SQL
     SELECT
@@ -64,10 +85,9 @@ WHERE
 `w`.`worldId`     = `k`.`worldId`     AND
 `c`.`categoryId`  = `k`.`categoryId`  AND
 `s`.`statisticId` = `k`.`statisticId` AND
-`e`.`entityId`    = `k`.`entityId` AND
-`e`.`name` =
+`k`.`entityId` =
 SQL;
-  $sql .= "'" . $this->name . "'";
+  $sql .= $entityId;
   $sql = str_replace("$[PREFIX]", BS_DB_PREFIX,$sql);
   //echo $sql;//DEBUG
   $bs_db->real_query($sql);
