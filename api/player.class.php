@@ -63,7 +63,7 @@ Class SPlayer{
  private function __construct($entityId,$name) {
 
   global $bs_db;
-  
+  $this->name = $name;
   
   
   $sql = <<<SQL
@@ -85,7 +85,8 @@ WHERE
 `w`.`worldId`     = `k`.`worldId`     AND
 `c`.`categoryId`  = `k`.`categoryId`  AND
 `s`.`statisticId` = `k`.`statisticId` AND
-`k`.`entityId` =
+`e`.`entityId`    = `k`.`entityId` AND
+`e`.`entityId` = 
 SQL;
   $sql .= $entityId;
   $sql = str_replace("$[PREFIX]", BS_DB_PREFIX,$sql);

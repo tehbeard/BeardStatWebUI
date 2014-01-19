@@ -5,7 +5,7 @@ API file for beardstat web API.
 */
 define("BEARDSTAT_API_DIR", dirname(__FILE__) . "/");
 (@include BEARDSTAT_API_DIR . 'config.php') or die("<h1>No API config found!</h1>");
-$bs_db = new mysqli(BS_DB_HOST,BS_DB_USER,BS_DB_PASS,BS_DB_DB,BS_DB_PORT);
+$bs_db = new \mysqli(BS_DB_HOST,BS_DB_USER,BS_DB_PASS,BS_DB_DB,BS_DB_PORT);
 if($bs_db->connect_errno > 0){
     die('Unable to connect to database [' . $bs_db->connect_error . ']');
 }
@@ -21,7 +21,7 @@ function getLookup($element,$key){
  $bs_db->real_query("SELECT * FROM " . BS_DB_PREFIX . "_" . $e);
  $res = $bs_db->store_result();
 
- if ($res === false) {throw new Exception("Database Error [{$bs_db->errno}] {$bs_db->error}");}
+ if ($res === false) {throw new \Exception("Database Error [{$bs_db->errno}] {$bs_db->error}");}
  $a = array();
  while($r = $res->fetch_assoc()){
   $a[$r[$key]]=$r;
