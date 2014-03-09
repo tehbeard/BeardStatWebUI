@@ -105,4 +105,26 @@ function startsWith($haystack, $needle)
     return !strncmp($haystack, $needle, strlen($needle));
 }
 
+
+class BreadCrumb {
+  private static $crumbs = array();
+
+  public static function addCrumb($title, $url){
+    self::$crumbs[] = array("title"=>$title,"link"=>$url);
+  }
+
+  public static function getCrumbs(){
+    $res = '<ol class="breadcrumb">';
+    foreach(self::$crumbs as $key=>$c){
+      $res .= "\n<li " . (($key != count(self::$crumbs)-1) ?"":"class='active'") . ">";
+      $res .= ($key != count(self::$crumbs)-1) ? "<a href='{$c['link']}'>{$c['title']}</a>" : $c['title'];
+      $res .= "</li>";
+    }
+    $res .= "</ol>";
+    return $res;
+  }
+
+}
+//Always add the home crumb
+BreadCrumb::addCrumb("home","index.php");
 ?>
