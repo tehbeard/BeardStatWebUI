@@ -107,7 +107,7 @@ function loadFromData($selectedScoreboard,$limit=10){
   $this->title = $selectedScoreboard->title;
   $this->descrip = $selectedScoreboard->descrip;
 
-  $type = "player";//TODO - Make selectable in future
+  $type = "player";
 
   $sqlSelect = "$[PREFIX]_entity.`name` as `player` , $[PREFIX]_entity.`uuid` as `uuid`";
   $sqlFrom   = " $[PREFIX]_entity";

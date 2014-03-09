@@ -2,6 +2,7 @@
 /**
 Config for BeardStat API
 */
+define('BS_APP_ROOT', '//' . $_SERVER['HTTP_HOST'] . str_replace("\\","/",substr(dirname(__FILE__),strlen($_SERVER['DOCUMENT_ROOT']),-3)));
 define('BS_DB_HOST',"${host}");
 define('BS_DB_USER',"${user}");
 define('BS_DB_PASS',"${pass}");
@@ -10,4 +11,5 @@ define('BS_DB_PORT',${port});
 define('BS_DB_PREFIX',"${prefix}");
 define('BS_FORMAT_DATE','D, jS M Y');//see php date() command for formatting details
 define('BS_PW','${adminpassword}');//Admin console password 
+define('BS_CFG_STABLE_LINKS',${stablelinks});
 ?>

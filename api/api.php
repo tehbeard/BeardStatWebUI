@@ -126,5 +126,5 @@ class BreadCrumb {
 
 }
 //Always add the home crumb
-BreadCrumb::addCrumb("home","index.php");
+BreadCrumb::addCrumb("home",BS_APP_ROOT);
 ?>

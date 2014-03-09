@@ -24,17 +24,14 @@ else {
 		echo "<span class='label label-danger'>No users found matching that name</span>";
 	}
 	if(sizeof($names) == 1){
-		?>
-		<script>
-		window.location="showplayer.php?playerUuid=<?php echo $names[0]['uuid'];?>";
-		</script>
-		<?php die();
+		header("location: " . (BS_CFG_STABLE_LINKS ? (BS_APP_ROOT . "player/uuid/" . $names[0]["uuid"]) : (BS_APP_ROOT . "player/" . $names[0]["name"])));
+		die();
 	}
 	else{
 
 		?>
 
-		<table class="table" style="">
+		<table class="table">
 			<?php 
 			foreach($names as $name){
 				?>
@@ -42,7 +39,7 @@ else {
 
 					<td><canvas class="head head-small" data-name="<?php echo $name["name"];?>"></canvas>
 					</td>
-					<td><a href="showplayer.php?playerUuid=<?php echo $name["uuid"];?>"><?php echo $name["name"];?></name>
+					<td><a href="<?php echo BS_CFG_STABLE_LINKS ? (BS_APP_ROOT . "player/uuid/" . $name["uuid"]) : (BS_APP_ROOT . "player/" . $name["name"])?>"><?php echo $name["name"];?></name>
 					</td>
 
 				</tr>

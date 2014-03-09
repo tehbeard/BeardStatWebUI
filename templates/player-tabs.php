@@ -7,9 +7,12 @@ if(isset($_GET['playerUuid'])){
   $p = BeardStat\SPlayer::getFromUUID($_GET['playerUuid']);
 }
 
-BeardStat\BreadCrumb::addCrumb($p->name,"showplayer.php?playerUuid=" . $p->uuid);
+
+BeardStat\BreadCrumb::addCrumb($p->name, BS_CFG_STABLE_LINKS ? (BS_APP_ROOT . "player/uuid/" . $p->uuid) : (BS_APP_ROOT . "player/" . $p->name) );
+
 BeardStat\BreadCrumb::addCrumb("Record","");
 echo BeardStat\BreadCrumb::getCrumbs();
+include 'templates/playerform.html';
 $tabs = new BeardStat\StatTabs(BEARDSTAT_API_DIR . "../config/tabs.json");
 ?>
 <div class="tab-stats col-md-12">
@@ -24,26 +27,23 @@ $tabs = new BeardStat\StatTabs(BEARDSTAT_API_DIR . "../config/tabs.json");
   $health = $h;
   while($health > 0){
     if($health >= 2){
-      echo "<img src=\"img/Heart.svg\" class=\"heart\">";
+      echo "<img src=\"" . BS_APP_ROOT . "/img/Heart.svg\" class=\"heart\">";
     }
     else if($health == 1){
-      echo "<img src=\"img/Half_Heart.svg\" class=\"heart\">";
+      echo "<img src=\"" . BS_APP_ROOT . "/img/Half_Heart.svg\" class=\"heart\">";
     }
     $health -= 2;
   }
   $ahealth = 20 - $h;
   while($ahealth > 0){
     if($ahealth >= 2){
-      echo "<img src=\"img/Empty_Heart.svg\" class=\"heart\">";
+      echo "<img src=\"" . BS_APP_ROOT . "/img/Empty_Heart.svg\" class=\"heart\">";
     }
     $ahealth -=2;
   }
   ?>
 </div>
 <div style="clear:both"></div>
-<br/>
-<?php include 'templates/playerform.html';?>
-<br/>
 <ul class="nav nav-tabs">
   <?php 
 		//Print headings

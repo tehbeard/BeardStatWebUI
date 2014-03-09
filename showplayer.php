@@ -2,7 +2,7 @@
 ob_start();//Done for search handling auto redirecting
 include 'api/api.php';
 define('BS_TITLE',"Player stats");
-BeardStat\BreadCrumb::addCrumb("Players","showplayer.php");
+BeardStat\BreadCrumb::addCrumb("Players",BS_APP_ROOT. "player/");
 include 'templates/header.php';
 
 ?>

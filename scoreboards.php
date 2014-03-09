@@ -2,7 +2,7 @@
 include 'api/api.php';
 define('BS_TITLE', "Scoreboards");
 
-BeardStat\BreadCrumb::addCrumb("Scoreboards","scoreboards.php");
+BeardStat\BreadCrumb::addCrumb("Scoreboards",BS_APP_ROOT . "scoreboards/");
 include 'templates/header.php';
 
 $score = new BeardStat\SScoreboard('config/scoreboards.json'); 
@@ -10,7 +10,7 @@ if(isset($_GET['board'])){
 	$score->load($_GET['board']);
 
 	
-	BeardStat\BreadCrumb::addCrumb($score->the_title(),"scopeboards.php?={$_GET['board']}");
+	BeardStat\BreadCrumb::addCrumb($score->the_title(),BS_APP_ROOT . "scoreboards/{$_GET['board']}");
 	echo BeardStat\BreadCrumb::getCrumbs();
 	?>
 	<h1><?php echo $score->the_title(); ?></h1>
@@ -27,7 +27,7 @@ if(isset($_GET['board'])){
 			?></tr>
 			<?php 
 			while($score->have_entry()){
-				?><tr><td><canvas class="head" data-name="<?php echo $score->the_player_name(); ?>"></canvas></td><td><?php echo $score->the_rank(); ?></td><td><a href="showplayer.php?playerUuid=<?php echo $score->the_player_uuid(); ?>"><?php echo $score->the_player_name(); ?></a></td><?php 
+				?><tr><td><canvas class="head" data-name="<?php echo $score->the_player_name(); ?>"></canvas></td><td><?php echo $score->the_rank(); ?></td><td><a href="<?php echo BS_CFG_STABLE_LINKS ? (BS_APP_ROOT . "player/uuid/" . $score->the_player_uuid()) : (BS_APP_ROOT . "player/" . $score->the_player_name())  ?>"><?php echo $score->the_player_name(); ?></a></td><?php 
 				while($score->have_field()){
 					echo "<td class=\"" . $score->the_field_name() . "\">" . $score->the_field_value() . "</td>"; 
 				} 
@@ -40,7 +40,6 @@ if(isset($_GET['board'])){
 	}
 	else
 	{
-		
 		echo BeardStat\BreadCrumb::getCrumbs();
 		include 'templates/scoreboard-select.php';
 	};
