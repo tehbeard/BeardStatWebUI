@@ -14,7 +14,9 @@ if(isset($_GET['board'])){
 	echo BeardStat\BreadCrumb::getCrumbs();
 	?>
 	<h1><?php echo $score->the_title(); ?></h1>
+	<h4><?php echo $score->the_description(); ?></h4>
 	<?php include 'templates/scoreboard-select.php';?>
+	<br/>
 	<table class="table">
 		<tr><th></th><th>Rank</th><th>Player</th>
 			<?php 

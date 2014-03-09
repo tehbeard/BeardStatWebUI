@@ -2,6 +2,7 @@
   {
     "id": "Played_Time",
     "title": "Played Time",
+    "descrip": "Longest time played on the server.",
     "data": [
       {
         "label": "",
@@ -19,6 +20,7 @@
   {
     "id": "Repeat_Customers",
     "title": "Repeat Customers",
+    "descrip": "Most times logged in.",
     "data": [
       {
         "label": "",
@@ -36,6 +38,7 @@
   {
     "id": "Hikers",
     "title": "Hikers",
+    "descrip": "Longest distance traveled on foot.",
     "data": [
       {
         "label": "",
@@ -53,6 +56,7 @@
   {
     "id": "Sailors",
     "title": "Sailors",
+    "descrip": "Longest distance traveled while in a boat.",
     "data": [
       {
         "label": "",
@@ -70,6 +74,7 @@
   {
     "id": "Conductors",
     "title": "Conductors",
+    "descrip": "Longest distance traveled while in a Minecart.",
     "data": [
       {
         "label": "",
@@ -87,6 +92,7 @@
   {
     "id": "XP_Earners",
     "title": "XP Earners",
+    "descrip": "Most XP Earned.",
     "data": [
       {
         "label": "",
@@ -104,6 +110,7 @@
   {
     "id": "Levels",
     "title": "Levels",
+    "descrip": "Highest Level currently.",
     "data": [
       {
         "label": "",
@@ -121,6 +128,7 @@
   {
     "id": "Clown_Punchers",
     "title": "Clown Punchers",
+    "descrip": "Most times punched the air.",
     "data": [
       {
         "label": "",
@@ -138,6 +146,7 @@
   {
     "id": "Chatterboxes",
     "title": "Chatterboxes",
+    "descrip": "Most chat messages sent.",
     "data": [
       {
         "label": "",
@@ -155,6 +164,7 @@
   {
     "id": "Blocks_Placed",
     "title": "Blocks Placed",
+    "descrip": "Most blocks placed.",
     "data": [
       {
         "label": "",
@@ -172,6 +182,7 @@
   {
     "id": "Blocks_Destroyed",
     "title": "Blocks Destroyed",
+    "descrip": "Most blocks destroyed.",
     "data": [
       {
         "label": "",
@@ -189,6 +200,7 @@
   {
     "id": "Slayers",
     "title": "Slayers",
+    "descrip": "Most kills made.",
     "data": [
       {
         "label": "",
@@ -206,6 +218,7 @@
   {
     "id": "Player_Slayers",
     "title": "Player Slayers",
+    "descrip": "Most Players killed.",
     "data": [
       {
         "label": "",
@@ -223,6 +236,7 @@
   {
     "id": "Deaths",
     "title": "Deaths",
+    "descrip": "Most deaths.",
     "data": [
       {
         "label": "",
@@ -240,6 +254,7 @@
   {
     "id": "Deaths_by_Players",
     "title": "Deaths by Players",
+    "descrip": "Most deaths from Players.",
     "data": [
       {
         "label": "",
@@ -257,6 +272,7 @@
   {
     "id": "Damage_Dealers",
     "title": "Damage Dealers",
+    "descrip": "Most damage dealt.",
     "data": [
       {
         "label": "",
@@ -274,6 +290,7 @@
   {
     "id": "Player_Damagers",
     "title": "Player Damagers",
+    "descrip": "Most damage dealt to Players.",
     "data": [
       {
         "label": "",
@@ -291,6 +308,7 @@
   {
     "id": "Damage_Takers",
     "title": "Damage Takers",
+    "descrip": "Most damage received.",
     "data": [
       {
         "label": "",
@@ -308,6 +326,7 @@
   {
     "id": "Damage_from_Players",
     "title": "Damage from Players",
+    "descrip": "Most damage received from Players.",
     "data": [
       {
         "label": "",
@@ -325,6 +344,7 @@
   {
     "id": "Snipers",
     "title": "Snipers",
+    "descrip": "Most Arrows fired from a Bow.",
     "data": [
       {
         "label": "",
@@ -342,6 +362,7 @@
   {
     "id": "Wolf_Whisperers",
     "title": "Wolf Whisperers",
+    "descrip": "Most Wolves tamed.",
     "data": [
       {
         "label": "",
@@ -359,6 +380,7 @@
   {
     "id": "Wolf_Slayers",
     "title": "Wolf Slayers",
+    "descrip": "Most Wolves killed.",
     "data": [
       {
         "label": "",
@@ -376,6 +398,7 @@
   {
     "id": "Zombie_Pigmen_Slayers",
     "title": "Zombie Pigmen Slayers",
+    "descrip": "Most Zombie Pigmen killed.",
     "data": [
       {
         "label": "",
@@ -393,6 +416,7 @@
   {
     "id": "Endermen_Slayers",
     "title": "Endermen Slayers",
+    "descrip": "Most Endermen killed.",
     "data": [
       {
         "label": "",
@@ -410,6 +434,7 @@
   {
     "id": "Blaze_Slayers",
     "title": "Blaze Slayers",
+    "descrip": "Most Blazes killed.",
     "data": [
       {
         "label": "",
@@ -427,6 +452,7 @@
   {
     "id": "Cave_Spider_Slayers",
     "title": "Cave Spider Slayers",
+    "descrip": "Most Cave Spiders killed.",
     "data": [
       {
         "label": "",
@@ -444,6 +470,7 @@
   {
     "id": "Creeper_Slayers",
     "title": "Creeper Slayers",
+    "descrip": "Most Creepers killed.",
     "data": [
       {
         "label": "",
@@ -461,6 +488,7 @@
   {
     "id": "Ghast_Slayers",
     "title": "Ghast Slayers",
+    "descrip": "Most Ghasts killed.",
     "data": [
       {
         "label": "",
@@ -478,6 +506,7 @@
   {
     "id": "Magma_Cube_Slayers",
     "title": "Magma Cube Slayers",
+    "descrip": "Most Magma Cubes killed.",
     "data": [
       {
         "label": "",
@@ -495,6 +524,7 @@
   {
     "id": "Silverfish_Slayers",
     "title": "Silverfish Slayers",
+    "descrip": "Most Silverfish killed.",
     "data": [
       {
         "label": "",
@@ -512,6 +542,7 @@
   {
     "id": "Skeleton_Slayers",
     "title": "Skeleton Slayers",
+    "descrip": "Most Skeletons killed.",
     "data": [
       {
         "label": "",
@@ -529,6 +560,7 @@
   {
     "id": "Slime_Slayers",
     "title": "Slime Slayers",
+    "descrip": "Most Slimes killed.",
     "data": [
       {
         "label": "",
@@ -546,6 +578,7 @@
   {
     "id": "Spider_Slayers",
     "title": "Spider Slayers",
+    "descrip": "Most Spiders killed.",
     "data": [
       {
         "label": "",
@@ -563,6 +596,7 @@
   {
     "id": "Zombie_Slayers",
     "title": "Zombie Slayers",
+    "descrip": "Most Zombies killed.",
     "data": [
       {
         "label": "",
@@ -580,6 +614,7 @@
   {
     "id": "Ender_Dragon_Slayers",
     "title": "Ender Dragon Slayers",
+    "descrip": "Most Ender Dragons killed.",
     "data": [
       {
         "label": "",
@@ -597,6 +632,7 @@
   {
     "id": "Least_Buoyant",
     "title": "Least Buoyant",
+    "descrip": "Most Drowning deaths.",
     "data": [
       {
         "label": "",
@@ -614,6 +650,7 @@
   {
     "id": "Cliff_Divers",
     "title": "Cliff Divers",
+    "descrip": "Most Falling deaths.",
     "data": [
       {
         "label": "",
@@ -631,6 +668,7 @@
   {
     "id": "Wall_Occupiers",
     "title": "Wall Occupiers",
+    "descrip": "Most Suffocation deaths.",
     "data": [
       {
         "label": "",
@@ -648,6 +686,7 @@
   {
     "id": "Extra_Crispy",
     "title": "Extra Crispy",
+    "descrip": "Most deaths by Fire.",
     "data": [
       {
         "label": "",
@@ -665,6 +704,7 @@
   {
     "id": "Easy_Melters",
     "title": "Easy Melters",
+    "descrip": "Most deaths from Lava.",
     "data": [
       {
         "label": "",
@@ -682,6 +722,7 @@
   {
     "id": "Faulty_Demolitionists",
     "title": "Faulty Demolitionists",
+    "descrip": "Most deaths from TNT explosions.",
     "data": [
       {
         "label": "",
@@ -699,6 +740,7 @@
   {
     "id": "Prickers",
     "title": "Prickers",
+    "descrip": "Most deaths from Cacti.",
     "data": [
       {
         "label": "",
@@ -716,6 +758,7 @@
   {
     "id": "Coal_Miners",
     "title": "Coal Miners",
+    "descrip": "Most Coal Ore mined.",
     "data": [
       {
         "label": "",
@@ -733,6 +776,7 @@
   {
     "id": "Iron_Miners",
     "title": "Iron Miners",
+    "descrip": "Most Iron Ore mined.",
     "data": [
       {
         "label": "",
@@ -750,6 +794,7 @@
   {
     "id": "Gold_Miners",
     "title": "Gold Miners",
+    "descrip": "Most Gold Ore mined.",
     "data": [
       {
         "label": "",
@@ -767,6 +812,7 @@
   {
     "id": "Lapis_Miners",
     "title": "Lapis Miners",
+    "descrip": "Most Lapis Lazuli Ore mined.",
     "data": [
       {
         "label": "",
@@ -784,6 +830,7 @@
   {
     "id": "Redstone_Miners",
     "title": "Redstone Miners",
+    "descrip": "Most Redstone Ore mined.",
     "data": [
       {
         "label": "",
@@ -801,6 +848,7 @@
   {
     "id": "Diamond_Miners",
     "title": "Diamond Miners",
+    "descrip": "Most Diamond Ore mined.",
     "data": [
       {
         "label": "",
@@ -818,6 +866,7 @@
   {
     "id": "Lumberjacks",
     "title": "Lumberjacks",
+    "descrip": "Most Tree Logs chopped down.",
     "data": [
       {
         "label": "",
@@ -835,6 +884,7 @@
   {
     "id": "Stone_Miners",
     "title": "Stone Miners",
+    "descrip": "Most Stone mined.",
     "data": [
       {
         "label": "",
@@ -852,6 +902,7 @@
   {
     "id": "Dirt_Movers",
     "title": "Dirt Movers",
+    "descrip": "Most Dirt mined.",
     "data": [
       {
         "label": "",
@@ -869,6 +920,7 @@
   {
     "id": "Sand_Lovers",
     "title": "Sand Lovers",
+    "descrip": "Most Sand mined.",
     "data": [
       {
         "label": "",
@@ -886,6 +938,7 @@
   {
     "id": "Clay_Diggers",
     "title": "Clay Diggers",
+    "descrip": "Most Clay mined.",
     "data": [
       {
         "label": "",
@@ -903,6 +956,7 @@
   {
     "id": "Cobweb_Cleaners",
     "title": "Cobweb Cleaners",
+    "descrip": "Most Cobwebs destroyed.",
     "data": [
       {
         "label": "",
@@ -920,6 +974,7 @@
   {
     "id": "Obsidian_Miners",
     "title": "Obsidian Miners",
+    "descrip": "Most Obsidian mined.",
     "data": [
       {
         "label": "",
@@ -937,6 +992,7 @@
   {
     "id": "Mossy_Miners",
     "title": "Mossy Miners",
+    "descrip": "Most Moss Stone mined.",
     "data": [
       {
         "label": "",
@@ -954,6 +1010,7 @@
   {
     "id": "Dungeon_Crawlers",
     "title": "Dungeon Crawlers",
+    "descrip": "Most Mob Spawners destroyed.",
     "data": [
       {
         "label": "",
@@ -971,6 +1028,7 @@
   {
     "id": "Netherrack_Lovers",
     "title": "Netherrack Lovers",
+    "descrip": "Most Netherrack mined.",
     "data": [
       {
         "label": "",
@@ -988,6 +1046,7 @@
   {
     "id": "Glowstone_Miners",
     "title": "Glowstone Miners",
+    "descrip": "Most Glowstone mined.",
     "data": [
       {
         "label": "",
@@ -1005,6 +1064,7 @@
   {
     "id": "Safety_Torchers",
     "title": "Safety Torchers",
+    "descrip": "Most Torches placed.",
     "data": [
       {
         "label": "",
@@ -1022,6 +1082,7 @@
   {
     "id": "Cake_Lovers",
     "title": "Cake Lovers",
+    "descrip": "Most Cakes placed.",
     "data": [
       {
         "label": "",
@@ -1039,6 +1100,7 @@
   {
     "id": "Explosive_Experts",
     "title": "Explosive Experts",
+    "descrip": "Most TNT placed.",
     "data": [
       {
         "label": "",
@@ -1056,6 +1118,7 @@
   {
     "id": "Demolitionists",
     "title": "Demolitionists",
+    "descrip": "Most TNT ignited.",
     "data": [
       {
         "label": "",
@@ -1073,6 +1136,7 @@
   {
     "id": "Redstone_Wirers",
     "title": "Redstone Wirers",
+    "descrip": "Most Redstone Dust placed.",
     "data": [
       {
         "label": "",
@@ -1090,6 +1154,7 @@
   {
     "id": "Mechanically_Inclined",
     "title": "Mechanically Inclined",
+    "descrip": "Most Pistons & Sticky Pistons placed.",
     "data": [
       {
         "label": "",
@@ -1107,6 +1172,7 @@
   {
     "id": "Musically_Inclined",
     "title": "Musically Inclined",
+    "descrip": "Most Noteblocks placed.",
     "data": [
       {
         "label": "",
@@ -1124,6 +1190,7 @@
   {
     "id": "Railroad_Workers",
     "title": "Railroad Workers",
+    "descrip": "Most Rails placed.",
     "data": [
       {
         "label": "",
@@ -1141,6 +1208,7 @@
   {
     "id": "Forest_Lovers",
     "title": "Forest Lovers",
+    "descrip": "Most Saplings planted.",
     "data": [
       {
         "label": "",
@@ -1158,6 +1226,7 @@
   {
     "id": "Water_Haters",
     "title": "Water Haters",
+    "descrip": "Most Sponges placed.",
     "data": [
       {
         "label": "",
@@ -1175,6 +1244,7 @@
   {
     "id": "Flower_Lovers",
     "title": "Flower Lovers",
+    "descrip": "Most Roses & Dandelions placed.",
     "data": [
       {
         "label": "",
@@ -1192,6 +1262,7 @@
   {
     "id": "Winter_Lovers",
     "title": "Winter Lovers",
+    "descrip": "Most Ice and Snow Blocks placed.",
     "data": [
       {
         "label": "",
@@ -1209,6 +1280,7 @@
   {
     "id": "Transparent_Personalities",
     "title": "Transparent Personalities",
+    "descrip": "Most Glass/Panes placed.",
     "data": [
       {
         "label": "",
@@ -1226,6 +1298,7 @@
   {
     "id": "Bucket_Users",
     "title": "Bucket Users",
+    "descrip": "Most Buckets used.",
     "data": [
       {
         "label": "",
@@ -1243,6 +1316,7 @@
   {
     "id": "Water_Displacers",
     "title": "Water Displacers",
+    "descrip": "Most Water dumped out of a bucket.",
     "data": [
       {
         "label": "",
@@ -1260,6 +1334,7 @@
   {
     "id": "Lava_Follies",
     "title": "Lava Follies",
+    "descrip": "Most Lava dumped out of a bucket.",
     "data": [
       {
         "label": "",
@@ -1277,6 +1352,7 @@
   {
     "id": "Firestarters",
     "title": "Firestarters",
+    "descrip": "Most things set on fire.",
     "data": [
       {
         "label": "",
@@ -1294,6 +1370,7 @@
   {
     "id": "Teleporters",
     "title": "Teleporters",
+    "descrip": "Most Ender Pearls used.",
     "data": [
       {
         "label": "",
@@ -1311,6 +1388,7 @@
   {
     "id": "Anglers",
     "title": "Anglers",
+    "descrip": "Most Fish caught.",
     "data": [
       {
         "label": "",
@@ -1328,6 +1406,7 @@
   {
     "id": "Informers",
     "title": "Informers",
+    "descrip": "Most Signs placed.",
     "data": [
       {
         "label": "",
@@ -1345,6 +1424,7 @@
   {
     "id": "Wooly_Collectors",
     "title": "Wooly Collectors",
+    "descrip": "Most Wool obtained.",
     "data": [
       {
         "label": "",
@@ -1362,6 +1442,7 @@
   {
     "id": "Pearl_Collectors",
     "title": "Pearl Collectors",
+    "descrip": "Most Ender Pearls obtained.",
     "data": [
       {
         "label": "",
@@ -1379,6 +1460,7 @@
   {
     "id": "Rod_Collectors",
     "title": "Rod Collectors",
+    "descrip": "Most Blaze Rods obtained.",
     "data": [
       {
         "label": "",
@@ -1396,6 +1478,7 @@
   {
     "id": "Knitters",
     "title": "Knitters",
+    "descrip": "Most String obtained.",
     "data": [
       {
         "label": "",
@@ -1413,6 +1496,7 @@
   {
     "id": "Eye_Beholders",
     "title": "Eye Beholders",
+    "descrip": "Most Spider Eyes obtained.",
     "data": [
       {
         "label": "",
@@ -1430,6 +1514,7 @@
   {
     "id": "Gunpowder_Collectors",
     "title": "Gunpowder Collectors",
+    "descrip": "Most Gunpowder obtained.",
     "data": [
       {
         "label": "",
@@ -1447,6 +1532,7 @@
   {
     "id": "Tear_Collectors",
     "title": "Tear Collectors",
+    "descrip": "Most Ghast Tears obtained.",
     "data": [
       {
         "label": "",
@@ -1464,6 +1550,7 @@
   {
     "id": "Bone_Collectors",
     "title": "Bone Collectors",
+    "descrip": "Most Bones obtained.",
     "data": [
       {
         "label": "",
@@ -1481,6 +1568,7 @@
   {
     "id": "Arrow_Collectors",
     "title": "Arrow Collectors",
+    "descrip": "Most Arrows obtained.",
     "data": [
       {
         "label": "",
@@ -1498,6 +1586,7 @@
   {
     "id": "Oozey_Collectors",
     "title": "Oozey Collectors",
+    "descrip": "Most Slimeballs obtained.",
     "data": [
       {
         "label": "",
@@ -1515,6 +1604,7 @@
   {
     "id": "Prickly_Farmers",
     "title": "Prickly Farmers",
+    "descrip": "Most Cactus obtained.",
     "data": [
       {
         "label": "",
@@ -1532,6 +1622,7 @@
   {
     "id": "Sugar_Farmers",
     "title": "Sugar Farmers",
+    "descrip": "Most Sugar Cane obtained.",
     "data": [
       {
         "label": "",
@@ -1549,6 +1640,7 @@
   {
     "id": "Wheat_Farmers",
     "title": "Wheat Farmers",
+    "descrip": "Most Wheat obtained.",
     "data": [
       {
         "label": "",
@@ -1566,6 +1658,7 @@
   {
     "id": "Pumpkin_Farmers",
     "title": "Pumpkin Farmers",
+    "descrip": "Most Pumpkins obtained.",
     "data": [
       {
         "label": "",
@@ -1583,6 +1676,7 @@
   {
     "id": "Melon_Farmers",
     "title": "Melon Farmers",
+    "descrip": "Most Melon Slices obtained.",
     "data": [
       {
         "label": "",
@@ -1600,6 +1694,7 @@
   {
     "id": "Wart_Farmers",
     "title": "Wart Farmers",
+    "descrip": "Most Nether Wart obtained.",
     "data": [
       {
         "label": "",
@@ -1617,6 +1712,7 @@
   {
     "id": "Potion_Brewers",
     "title": "Potion Brewers",
+    "descrip": "Most Potions obtained.",
     "data": [
       {
         "label": "",
@@ -1634,6 +1730,7 @@
   {
     "id": "Music_Lovers",
     "title": "Music Lovers",
+    "descrip": "Most Music Discs obtained.",
     "data": [
       {
         "label": "",

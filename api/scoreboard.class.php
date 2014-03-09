@@ -24,6 +24,7 @@ Class SScoreboard{
   * @var unknown
   */
  public $title;
+ public $descrip;
  
  
  //Iterator indexes
@@ -70,6 +71,13 @@ Class SScoreboard{
  function the_scoreboard_title(){
   return $this->scoreboards[$this->scoreboardsIdx]->title;
  }
+
+ /**
+  * @return description of scoreboard (in scoreboard loop)
+  */
+ function the_scoreboard_description(){
+  return $this->scoreboards[$this->scoreboardsIdx]->descrip;
+ }
  
  /**
   * query db for scoreboard information
@@ -97,6 +105,7 @@ function loadFromData($selectedScoreboard,$limit=10){
   $statisticLookup = getLookup("statistic", "statistic");
 
   $this->title = $selectedScoreboard->title;
+  $this->descrip = $selectedScoreboard->descrip;
 
   $type = "player";//TODO - Make selectable in future
 
@@ -243,6 +252,14 @@ SQL;
   */
  function the_title(){
   return $this->title;
+ }
+
+ /**
+  * The title of the scoreboard
+  * @return unknown
+  */
+ function the_description(){
+  return $this->descrip;
  }
  
 

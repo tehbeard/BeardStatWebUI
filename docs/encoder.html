@@ -5,6 +5,7 @@
 baseEntry = {
     "id": "BORK",
     "title": "BORK",
+    "descrip": "BORK",
     "data": [
       {
         "label": "",
@@ -35,6 +36,7 @@ function encodeIt(){
 
 		newObj.id    = metaParts[0].replace(/ /g,'_');
 		newObj.title = metaParts[0];
+		newObj.descrip = metaParts[1];
 		newObj.data[0].cat = statParts[0];
 		newObj.data[0].stat = statParts[1].replace(/\+/g,'|');
 		newObj.data[0].order["type"] = metaParts[3];
