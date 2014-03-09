@@ -1,1 +1,1651 @@
-[{"id":"playtime","title":"Total playtime","data":[{"label":"play time is funtime","domain":"default","world":"$.*","cat":"stats","stat":"playedfor","order":{"idx":1,"type":"DESC"}}]},{"id":"logins","title":"Most logins","data":[{"label":"logins","domain":"default","world":"$.*","cat":"stats","stat":"login","order":{"idx":1,"type":"DESC"}}]},{"id":"move","title":"Lonesome road","data":[{"label":"blocks walked","domain":"default","world":"$.*","cat":"stats","stat":"move","order":{"idx":1,"type":"DESC"}}]},{"id":"boat","title":"IM ON A BOAT","data":[{"label":"blocks sailed","domain":"default","world":"$.*","cat":"vehicle","stat":"boat","order":{"idx":1,"type":"DESC"}}]},{"id":"chat","title":"Chatterboxes","data":[{"label":"Messages sent","domain":"default","world":"$.*","cat":"stats","stat":"chat","order":{"idx":1,"type":"DESC"}}]},{"id":"kd","title":"Killer instinct","data":[{"label":"Kills","domain":"default","world":"$.*","cat":"kills","stat":"total","order":{"idx":1,"type":"DESC"}},{"label":"deaths","domain":"default","world":"$.*","cat":"deaths","stat":"total","order":{"idx":2,"type":"DESC"}}]}]
+[
+  {
+    "id": "Played_Time",
+    "title": "Played Time",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "playedfor",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Repeat_Customers",
+    "title": "Repeat Customers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "login",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Hikers",
+    "title": "Hikers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "move",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Sailors",
+    "title": "Sailors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "vehicle",
+        "stat": "boat",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Conductors",
+    "title": "Conductors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "vehicle",
+        "stat": "minecart",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "XP_Earners",
+    "title": "XP Earners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "exp",
+        "stat": "lifetimexp",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Levels",
+    "title": "Levels",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "exp",
+        "stat": "currentlvl",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Clown_Punchers",
+    "title": "Clown Punchers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "armswing",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Chatterboxes",
+    "title": "Chatterboxes",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "chat",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Blocks_Placed",
+    "title": "Blocks Placed",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "totalblockcreate",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Blocks_Destroyed",
+    "title": "Blocks Destroyed",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "totalblockdestroy",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Slayers",
+    "title": "Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "total",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Player_Slayers",
+    "title": "Player Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "player",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Deaths",
+    "title": "Deaths",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "total",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Deaths_by_Players",
+    "title": "Deaths by Players",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "player",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Damage_Dealers",
+    "title": "Damage Dealers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "damagedealt",
+        "stat": "total",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Player_Damagers",
+    "title": "Player Damagers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "damagedealt",
+        "stat": "player",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Damage_Takers",
+    "title": "Damage Takers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "damagetaken",
+        "stat": "total",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Damage_from_Players",
+    "title": "Damage from Players",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "damagetaken",
+        "stat": "player",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Snipers",
+    "title": "Snipers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "bow",
+        "stat": "shots",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wolf_Whisperers",
+    "title": "Wolf Whisperers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "tamewolf",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wolf_Slayers",
+    "title": "Wolf Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "wolf",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Zombie_Pigmen_Slayers",
+    "title": "Zombie Pigmen Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "pigzombie",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Endermen_Slayers",
+    "title": "Endermen Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "enderman",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Blaze_Slayers",
+    "title": "Blaze Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "blaze",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Cave_Spider_Slayers",
+    "title": "Cave Spider Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "cavespider",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Creeper_Slayers",
+    "title": "Creeper Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "creeper",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ghast_Slayers",
+    "title": "Ghast Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "ghast",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Magma_Cube_Slayers",
+    "title": "Magma Cube Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "magmacube",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Silverfish_Slayers",
+    "title": "Silverfish Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "silverfish",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Skeleton_Slayers",
+    "title": "Skeleton Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "skeleton",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Slime_Slayers",
+    "title": "Slime Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "slime",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Spider_Slayers",
+    "title": "Spider Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "spider",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Zombie_Slayers",
+    "title": "Zombie Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "zombie",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ender_Dragon_Slayers",
+    "title": "Ender Dragon Slayers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "kills",
+        "stat": "enderdragon",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Least_Buoyant",
+    "title": "Least Buoyant",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "drowning",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Cliff_Divers",
+    "title": "Cliff Divers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "fall",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wall_Occupiers",
+    "title": "Wall Occupiers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "suffocation",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Extra_Crispy",
+    "title": "Extra Crispy",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "fire|firetick",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Easy_Melters",
+    "title": "Easy Melters",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "lava",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Faulty_Demolitionists",
+    "title": "Faulty Demolitionists",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "blockexplosion",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Prickers",
+    "title": "Prickers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "deaths",
+        "stat": "contact",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Coal_Miners",
+    "title": "Coal Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "coalore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Iron_Miners",
+    "title": "Iron Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "ironore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Gold_Miners",
+    "title": "Gold Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "goldore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Lapis_Miners",
+    "title": "Lapis Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "lapisore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Redstone_Miners",
+    "title": "Redstone Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "redstoneore|glowingredstoneore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Diamond_Miners",
+    "title": "Diamond Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "diamondore",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Lumberjacks",
+    "title": "Lumberjacks",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "log",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Stone_Miners",
+    "title": "Stone Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "stone",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Dirt_Movers",
+    "title": "Dirt Movers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "dirt|grass|soil",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Sand_Lovers",
+    "title": "Sand Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "sand",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Clay_Diggers",
+    "title": "Clay Diggers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "clay",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Cobweb_Cleaners",
+    "title": "Cobweb Cleaners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "web",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Obsidian_Miners",
+    "title": "Obsidian Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "obsidian",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Mossy_Miners",
+    "title": "Mossy Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "mossycobblestone",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Dungeon_Crawlers",
+    "title": "Dungeon Crawlers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "mobspawner",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Netherrack_Lovers",
+    "title": "Netherrack Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "netherrack",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Glowstone_Miners",
+    "title": "Glowstone Miners",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockdestroy",
+        "stat": "glowstone",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Safety_Torchers",
+    "title": "Safety Torchers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "torch",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Cake_Lovers",
+    "title": "Cake Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "cakeblock",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Explosive_Experts",
+    "title": "Explosive Experts",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "tnt",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Demolitionists",
+    "title": "Demolitionists",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itemuse",
+        "stat": "tnt",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Redstone_Wirers",
+    "title": "Redstone Wirers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "redstonewire",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Mechanically_Inclined",
+    "title": "Mechanically Inclined",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "pistonbase|pistonstickybase",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Musically_Inclined",
+    "title": "Musically Inclined",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "noteblock",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Railroad_Workers",
+    "title": "Railroad Workers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "rails|poweredrail|detectorrail",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Forest_Lovers",
+    "title": "Forest Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "sapling",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Water_Haters",
+    "title": "Water Haters",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "sponge",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Flower_Lovers",
+    "title": "Flower Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "yellowflower|redrose",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Winter_Lovers",
+    "title": "Winter Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "ice|snowblock",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Transparent_Personalities",
+    "title": "Transparent Personalities",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "blockcreate",
+        "stat": "glass|thinglass",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Bucket_Users",
+    "title": "Bucket Users",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itemuse",
+        "stat": "bucket",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Water_Displacers",
+    "title": "Water Displacers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "emptywater",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Lava_Follies",
+    "title": "Lava Follies",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "emptylava",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Firestarters",
+    "title": "Firestarters",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itemuse",
+        "stat": "flintandsteel",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Teleporters",
+    "title": "Teleporters",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itemuse",
+        "stat": "enderpearl",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Anglers",
+    "title": "Anglers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "stats",
+        "stat": "fishcaught",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Informers",
+    "title": "Informers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itemuse",
+        "stat": "sign",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wooly_Collectors",
+    "title": "Wooly Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "wool",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Pearl_Collectors",
+    "title": "Pearl Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "enderpearl",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Rod_Collectors",
+    "title": "Rod Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "blazerod",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Knitters",
+    "title": "Knitters",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "string",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Eye_Beholders",
+    "title": "Eye Beholders",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "spidereye",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Gunpowder_Collectors",
+    "title": "Gunpowder Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "gunpowder",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Tear_Collectors",
+    "title": "Tear Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "ghasttear",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Bone_Collectors",
+    "title": "Bone Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "bone",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Arrow_Collectors",
+    "title": "Arrow Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "arrow",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Oozey_Collectors",
+    "title": "Oozey Collectors",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "slimeball",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Prickly_Farmers",
+    "title": "Prickly Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "cactus",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Sugar_Farmers",
+    "title": "Sugar Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "sugarcane",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wheat_Farmers",
+    "title": "Wheat Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "wheat",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Pumpkin_Farmers",
+    "title": "Pumpkin Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "pumpkin",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Melon_Farmers",
+    "title": "Melon Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "melon",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wart_Farmers",
+    "title": "Wart Farmers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "netherstalk",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Potion_Brewers",
+    "title": "Potion Brewers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "potion",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Music_Lovers",
+    "title": "Music Lovers",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "itempickup",
+        "stat": "greenrecord|goldrecord|record3|record4|record5|record6|record7|record8|record9|record10|record11",
+        "order": {
+          "idx": 1,
+          "type": "desc"
+        }
+      }
+    ]
+  }
+]

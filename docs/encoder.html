@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+baseEntry = {
+    "id": "BORK",
+    "title": "BORK",
+    "data": [
+      {
+        "label": "",
+        "domain": "default",
+        "world": "$.*",
+        "cat": "BORK",
+        "stat": "BORK",
+        "order": {
+          "idx": 1,
+          "type": "BORK"
+        }
+      }
+    ]
+};
+function encodeIt(){
+	var scoreboards = [];
+	var lines = $("#text").val().split("\n");
+	for(x in lines){
+		line = lines[x];
+		p = line.split(" = ");
+
+		//Statistic components
+		statParts = p[0].trim().split("~");
+		metaParts = p[1].trim().split(" , ");
+
+		newObj = JSON.parse(JSON.stringify(baseEntry));
+		console.log(newObj);
+
+		newObj.id    = metaParts[0].replace(/ /g,'_');
+		newObj.title = metaParts[0];
+		newObj.data[0].cat = statParts[0];
+		newObj.data[0].stat = statParts[1].replace(/\+/g,'|');
+		newObj.data[0].order["type"] = metaParts[3];
+		scoreboards.push(newObj);
+	}
+	$("#out").text(JSON.stringify(scoreboards,null,"  "));
+}
+</script>
+</head>
+<body>
+<textarea id="text"></textarea><br>
+<button onclick="encodeIt()">encode</button><br>
+<textarea id="out">
+	</textarea>
+</body>
+</html>
