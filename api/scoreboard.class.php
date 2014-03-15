@@ -24,6 +24,7 @@ Class SScoreboard{
   * @var unknown
   */
  public $title;
+ public $descrip;
  
  
  //Iterator indexes
@@ -70,6 +71,13 @@ Class SScoreboard{
  function the_scoreboard_title(){
   return $this->scoreboards[$this->scoreboardsIdx]->title;
  }
+
+ /**
+  * @return description of scoreboard (in scoreboard loop)
+  */
+ function the_scoreboard_description(){
+  return $this->scoreboards[$this->scoreboardsIdx]->descrip;
+ }
  
  /**
   * query db for scoreboard information
@@ -97,10 +105,11 @@ function loadFromData($selectedScoreboard,$limit=10){
   $statisticLookup = getLookup("statistic", "statistic");
 
   $this->title = $selectedScoreboard->title;
+  $this->descrip = $selectedScoreboard->descrip;
 
-  $type = "player";//TODO - Make selectable in future
+  $type = "player";
 
-  $sqlSelect = "$[PREFIX]_entity.`name` as `player`";
+  $sqlSelect = "$[PREFIX]_entity.`name` as `player` , $[PREFIX]_entity.`uuid` as `uuid`";
   $sqlFrom   = " $[PREFIX]_entity";
 
   $sqlWhere  = "$[PREFIX]_entity.`type` = \"player\"";
@@ -197,6 +206,10 @@ SQL;
  function the_player_name(){
   return $this->data[$this->dataIdx]["player"];
  }
+
+ function the_player_uuid(){
+  return $this->data[$this->dataIdx]["uuid"];
+ }
  /**
   * Resets field iterator
   */
@@ -240,6 +253,14 @@ SQL;
  function the_title(){
   return $this->title;
  }
+
+ /**
+  * The title of the scoreboard
+  * @return unknown
+  */
+ function the_description(){
+  return $this->descrip;
+ }
  
 
  function _generate_sql_expression($lookupTable,$searchKey,$key){
@@ -250,7 +271,7 @@ SQL;
   {
   $table = $lookupTable[$searchKey][$key];
   }
-   if(count($table) == 0){throw new exception("No table entry found for searchKey " . $searchKey);}
+   if(count($table) == 0){throw new \Exception("No table entry found for searchKey " . $searchKey);}
    if(count($table) == 1 ){
      return "= " . $table;
    }

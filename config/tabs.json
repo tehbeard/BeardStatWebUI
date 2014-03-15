@@ -101,6 +101,17 @@
    ]
   },
   {
+   "headingName":"kills",
+   "display":[
+   {"domain":"default","world":".*","cat":"kills","stat":"creeper"},
+   {"domain":"default","world":".*","cat":"kills","stat":"skeleton"},
+   {"domain":"default","world":".*","cat":"kills","stat":"zombie"},
+   {"domain":"default","world":".*","cat":"kills","stat":"spider"},
+   {"domain":"default","world":".*","cat":"kills","stat":"magmacube"},
+   {"domain":"default","world":".*","cat":"kills","stat":"enderman"}
+   ]
+  },
+  {
    "headingName":"Deaths",
    "display":[
    {"domain":"default","world":".*","cat":"deaths","stat":"creeper"},

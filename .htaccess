@@ -1,0 +1,12 @@
+RewriteEngine on
+
+#Base player page
+RewriteRule ^player/$ showplayer.php [L]
+#Catch search and uuid calls
+RewriteRule ^player/search/?$ showplayer.php?search= [QSA]
+RewriteRule ^player/uuid/([^/.]+)/?$ showplayer.php?playerUuid=$1 [L]
+#Finally look for a player
+RewriteRule ^player/([^/.]+)/?$ showplayer.php?playerName=$1 [L]
+
+RewriteRule ^scoreboards/?$ scoreboards.php [L] 
+RewriteRule ^scoreboards/([^/.]+)/?$ scoreboards.php?board=$1 [L] 

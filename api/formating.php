@@ -35,14 +35,14 @@ function gettimeformat($time=0,$format=2) {
  $res = "";
  foreach ($tm as $key => $value) {
   if ($value != 0) {
-   if ($res != "") $res .= $tf[$format][5];
+   if ($res != "") $res .= $tf[$format][5] . '</span><span class="time-chunk">';
    $temp = str_replace("!",number_format($value),$tf[$format][$key]);
    $temp = ($value != 1) ? str_replace("%","s",$temp): str_replace("%","",$temp);
    $res .= $temp;
   }
  }
  if ($res == "") $res = str_replace("!","0",str_replace("%","s",$tf[$format][4]));
- return $res;
+ return '<span class="time-chunk">' . $res . '</span>';
 }
 
 ?>
