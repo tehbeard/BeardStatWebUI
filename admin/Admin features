@@ -14,3 +14,10 @@ v1.1
 v1.2 
 + modify player tabs view
 + Report? (Reuse scoreboard mechanics? Add conditions to scoreboard fields)
+
+
+Statistic selector
+==================
+
+State 1. Dropdown box with search button attached to right, on click goto state 2.
+State 2. Display textbox, on textchange display list of results, onclick result set and goto state 1.
