@@ -1,4 +1,4 @@
-bsScoreboard = angular.module('bsScoreboard',['bsDropTextbox']);
+bsScoreboard = angular.module('bsScoreboard',[]);
 bsScoreboard.controller('listCtrl',['$scope','$http', function($scope,$http) {
      $scope.tmpl = {};
   $scope.tmpl.scoreboard = {
@@ -20,6 +20,11 @@ bsScoreboard.controller('listCtrl',['$scope','$http', function($scope,$http) {
   	categories:[],
   	statistics:[]
   };
+
+  $http({method: 'GET', url: '../config/scoreboards.json'}).
+  success(function(data, status, headers, config) {
+      $scope.scoreboards = data;
+  });
 
   $http({method: 'GET', url: 'getData.php?id=statistic'}).
   success(function(data, status, headers, config) {
