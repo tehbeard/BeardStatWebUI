@@ -11,12 +11,21 @@ include '../templates/header.php';
 </head>
 <body ng-app="bsScoreboard" ng-controller="listCtrl">
   <div class="container">
-    <div class="row">
-      <div ng-repeat="scoreboard in scoreboards">
-        <h3>{{scoreboard.title}}</h3>
-        title: <input type="text" ng-model="scoreboard.title" placeholder="scoreboard title"><br>
-        id: <input type="text" ng-model="scoreboard.id" placeholder="scoreboard id"><br>
-        <table class="table table-striped">
+    <div ng-repeat="scoreboard in scoreboards">
+      <h3>{{scoreboard.title}}</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <label>ID:</label> <input class="form-control" type="text" ng-model="scoreboard.id" placeholder="scoreboard id"><br>
+        </div>
+        <div class="col-md-4">
+          <label>Title:</label> <input class="form-control" type="text" ng-model="scoreboard.title" placeholder="scoreboard title">
+        </div>
+        <div class="col-md-4">
+          <label>Description:</label> <input class="form-control" type="text" ng-model="scoreboard.descrip" placeholder="scoreboard description">
+        </div>
+      </div>
+      <div class="row">
+        <table class="table table-striped col-md-12">
           <tr>
             <th>Label</th>
             <th>Domain</th>
@@ -41,19 +50,20 @@ include '../templates/header.php';
             </select>
           </td>
           <td>
-            <div class="btn-group">
-              <button class="btn btn-info"><i class="icon-arrow-up"></i></button>
-              <button class="btn btn-info"><i class="icon-arrow-down"></i></button>
-              <button class="btn btn-danger"><i class="icon-remove"></i></button>
+            <div class="btn-group-vertical">
+              <button class="btn btn-info"><i class="glyphicon glyphicon-arrow-up"></i></button>
+              <button class="btn btn-info"><i class="glyphicon glyphicon-arrow-down"></i></button>
+              <button class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
           </td>
         </tr>
       </table>
       <button ng-click="addScoreboardField($index)">Add Field</button>
-      <hr>
-      </div>
-      <button ng-click="addScoreboard()">Add Scoreboard</button>
+      
     </div>
+    <hr>
   </div>
+  <button ng-click="addScoreboard()">Add Scoreboard</button>
+</div>
 </body>
 </html>
