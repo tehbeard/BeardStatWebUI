@@ -1,0 +1,12 @@
+<?php return array (
+  0 => 
+  array (
+    '/webstat/admin/rest/overview' => 
+    array (
+      'GET' => 'RestAPI\\Overview',
+    ),
+  ),
+  1 => 
+  array (
+  ),
+);
