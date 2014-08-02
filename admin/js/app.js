@@ -19,16 +19,19 @@ bsAdmin.config(['$routeProvider',
   }]);
 
 bsAdmin.controller('aboutCtrl', ['$scope','version','builtwith', function($scope,version,builtwith) {
+
   $scope.version = version;
   $scope.builtwith = builtwith;
 }]);
 
-bsAdmin.controller('homeCtrl',function($scope, RestAPI){
+bsAdmin.controller('homeCtrl',function($scope, RestAPI,$sce){
+  
   $scope.stats = {
     playerCount: 0
   };
   RestAPI.overview.get().$promise.then(function(data){
     $scope.stats = data;
+    $scope.stats.totalTime = $sce.trustAsHtml(data.totalTime)
   });
 });
 
