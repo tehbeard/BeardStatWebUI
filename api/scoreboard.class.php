@@ -164,7 +164,6 @@ SQL;
   
   $this->last_sql = $sql;
   global $bs_db;
-  echo "<pre>$sql</pre>";
   $bs_db->real_query($sql ." LIMIT " . $limit);
   
   $res = $bs_db->store_result();

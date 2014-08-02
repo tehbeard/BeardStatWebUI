@@ -1,0 +1,14 @@
+-- Player views
+#/players
+#/players/uuid/:uuid
+
+-- Scoreboards
+#/scoreboards
+#/scoreboard/:id
+
+-- Display
+#/tabs
+#/tabs/:id
+
+API endpoints
+v1/:type/[:id]
