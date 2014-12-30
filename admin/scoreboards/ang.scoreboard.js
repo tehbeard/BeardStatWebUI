@@ -24,6 +24,7 @@ bsScoreboard.controller('listCtrl',['$scope','$http', function($scope,$http) {
   $http({method: 'GET', url: '../../config/scoreboards.json'}).
   success(function(data, status, headers, config) {
       $scope.scoreboards = data;
+      $("#loading").hide();
   });
 
   $http({method: 'GET', url: '../getData.php?id=statistic'}).

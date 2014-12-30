@@ -16,9 +16,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-users"></i> Players <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php if(is_authed()) { ?>
-              <li><a href="#/players">View players</a></li>
-              <li><a href="#/players/reset">Reset a stat</a></li>              
-              <li><a href="#/players/world/remove">Remove a world</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>players/">View players</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>players/?function=reset">Reset a stat</a></li>              
+              <li><a href="<?= BS_ADMIN_ROOT; ?>players/?function=removeworld">Remove a world</a></li>
               <?php } ?>
             </ul>
           </li>
@@ -36,9 +36,9 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-files-o"></i> Tabs <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#/tabs">View tabs</a></li>
-              <li><a href="#/tabs/new">Add tab</a></li>
-              <li><a href="#/tabs/new-custom">Add custom tab</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>tabs">View tabs</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>tabs/?functions=new">Add tab</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>tabs/?functions=new-custom">Add custom tab</a></li>
             </ul>
           </li>
           <!-- Reports -->
@@ -46,17 +46,20 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i> Reports (beta) <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php if(is_authed()) { ?>
-              <li><a href="#/reports/playtime/avg">Average playtime</a></li>
-              <li><a href="#/reports/playtime/avg">Total playtime</a></li>
-              <li><a href="#/reports/sessiontime/avg">Average session time</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>reports">Reports</a></li>
+              <!-- Do report list loop here -->
+              <li><a href="<?= BS_ADMIN_ROOT; ?>reports?report=playtime/avg">Average playtime</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>reports?report=playtime/avg">Total playtime</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>reports?report=sessiontime/avg">Average session time</a></li>
               <?php } ?>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> Options <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tasks"></i> Options <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
+              <li><a href="<?= BS_ADMIN_ROOT; ?>settings.php"><i class="fa fa-cog"></i> Configuration</a></li>
               <li><a href="<?= BS_ADMIN_ROOT; ?>logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
               <li><a href="<?= BS_APP_ROOT; ?>"><i class="fa fa-paper-plane"></i> Return to front end</a></li>
               <li><a href="<?= BS_ADMIN_ROOT; ?>about"><i class="fa fa-question"></i> About</a></li>

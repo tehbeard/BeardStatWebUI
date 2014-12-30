@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="<?= BS_APP_ROOT; ?>css/select2-bootstrap.css">
   <link href="<?= BS_APP_ROOT; ?>style.css" rel="stylesheet">
   <link href="<?= BS_ADMIN_ROOT; ?>css/login.css" rel="stylesheet">
-  <title>BeardStat :: Admin area</title>
+  <title>BeardStat :: <?= defined('BS_TITLE') ? BS_TITLE : "Admin" ?></title>
 </head>
 <body>
   <!-- Navigation here -->

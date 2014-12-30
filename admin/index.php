@@ -21,7 +21,7 @@ global $bs_db;
 <div class="container">
 <h1>Home</h1>
 <p>
-Tracking <strong><?= $playerCount;?></strong> players across <strong><?= $worldCount;?></strong> worlds.<br/>
+Tracking <strong><?= number_format($playerCount);?></strong> players across <strong><?= number_format($worldCount);?></strong> worlds.<br/>
 They have played a total of <?= gettimeformat($timeCount);?>.<br/>
 In that time, they have mined <strong><?= number_format($blockCount); ?></strong> blocks.
 </p>

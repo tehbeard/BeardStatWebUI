@@ -1,7 +1,7 @@
 <?php 
 require '../bootstrap.php';
 check_auth();
-define('BS_TITLE', "Scoreboard Manager");
+define('BS_TITLE', "Report Manager");
 require("../partials/header.php"); 
 
 global $bs_db;
@@ -20,13 +20,6 @@ global $bs_db;
 
 ?>
 <div class="container-fluid" ng-app="bsScoreboard" ng-controller="listCtrl">
-  <div class="row" id="loading">
-    <div class="col-md-12">
-      <div class="jumbotron">
-        <h1>Loading scoreboard data...</h1>
-      </div>
-    </div>
-  </div>
     <div ng-repeat="scoreboard in scoreboards">
       <h3>{{scoreboard.title}}</h3>
       <div class="row">
