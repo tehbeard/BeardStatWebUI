@@ -21,7 +21,7 @@ bsScoreboard.controller('listCtrl',['$scope','$http', function($scope,$http) {
   	statistics:[]
   };
 
-  $http({method: 'GET', url: '../config/scoreboards.json'}).
+  $http({method: 'GET', url: '../../config/scoreboards.json'}).
   success(function(data, status, headers, config) {
       $scope.scoreboards = data;
   });
@@ -40,3 +40,14 @@ bsScoreboard.controller('listCtrl',['$scope','$http', function($scope,$http) {
   });
 
 }]);
+
+function saveData(){
+  console.log(angular.toJson(angular.element("body").scope().scoreboards,true));
+  $.ajax('rest.php?id=scoreboards',{
+    'data': angular.toJson(angular.element("body").scope().scoreboards,true), 
+    'type': 'POST',
+    'processData': false,
+    success: function(data){console.log(data);},
+    'contentType': 'application/json'
+  });
+}
