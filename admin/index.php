@@ -26,5 +26,5 @@ They have played a total of <?= gettimeformat($timeCount);?>.<br/>
 In that time, they have mined <strong><?= number_format($blockCount); ?></strong> blocks.
 </p>
 </div>
-<?php require("/partials/scripts.php"); ?>
+<?php require("partials/scripts.php"); ?>
 <?php require("partials/footer.php"); ?>
