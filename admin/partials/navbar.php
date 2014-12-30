@@ -24,7 +24,7 @@
           </li>
           <!-- Scoreboards -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i> Scoreboards <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list-alt"></i> Scoreboards <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php if(is_authed()) { ?>
               <li><a href="<?= BS_ADMIN_ROOT; ?>scoreboards/">View scoreboards</a></li>
@@ -34,7 +34,7 @@
           </li>
           <!-- Tabs -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-files-o"></i> Tabs <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th-list"></i> Tabs <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="<?= BS_ADMIN_ROOT; ?>tabs">View tabs</a></li>
               <li><a href="<?= BS_ADMIN_ROOT; ?>tabs/?functions=new">Add tab</a></li>
@@ -59,10 +59,10 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tasks"></i> Options <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="<?= BS_ADMIN_ROOT; ?>settings.php"><i class="fa fa-cog"></i> Configuration</a></li>
-              <li><a href="<?= BS_ADMIN_ROOT; ?>logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
               <li><a href="<?= BS_APP_ROOT; ?>"><i class="fa fa-paper-plane"></i> Return to front end</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>settings.php"><i class="fa fa-cog"></i> Configuration</a></li>
               <li><a href="<?= BS_ADMIN_ROOT; ?>about"><i class="fa fa-question"></i> About</a></li>
+              <li><a href="<?= BS_ADMIN_ROOT; ?>logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
             </ul>
           </li>
           
